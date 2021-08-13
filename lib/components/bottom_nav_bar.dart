@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:innisfree/size_config.dart';
+// import 'package:innisfree/routes.dart';
+import 'package:innisfree/screens/home/home_screen.dart';
+import 'package:innisfree/screens/profile/profile_screen.dart';
+import 'package:innisfree/screens/catalog/catalog_screen.dart';
 
 class MyBottomNavBar extends StatefulWidget {
   const MyBottomNavBar({key}) : super(key: key);
@@ -38,6 +42,17 @@ class _MyBottomNavBarState extends State<MyBottomNavBar> {
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
+      switch (_selectedIndex) {
+        case 0:
+          Navigator.pushNamed(context, HomeScreen.routeName);
+          break;
+        case 2:
+          Navigator.pushNamed(context, CatalogScreen.routeName);
+          break;
+        case 3:
+          Navigator.pushNamed(context, ProfileScreen.routeName);
+          break;
+      }
     });
   }
 

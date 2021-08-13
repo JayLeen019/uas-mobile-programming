@@ -18,7 +18,9 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
+  # sdk: ">=2.12.0 <3.0.0"
   sdk: ">=2.7.0 <3.0.0"
+  
 
 dependencies:
   flutter:
@@ -28,6 +30,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  google_fonts: ^2.0.0
   flutter_svg: ^0.22.0 # support SVG usage in our application
   provider: ^5.0.0 # state 
   flutter_rating_bar: ^4.0.0 #Custom index indicator
@@ -39,6 +42,9 @@ dev_dependencies:
   carousel_slider: ^3.0.0
   percent_indicator: ^3.0.1
   flutter_launcher_icons: ^0.9.0
+  http: ^0.13.3
+  fluttertoast: ^8.0.7
+  rating_dialog: ^2.0.1
 
 flutter_icons:
   ios: true
@@ -62,6 +68,7 @@ flutter:
   assets:
     - assets/images/
     - assets/images/carousel/
+    - assets/images/productlist/
     - assets/icons/
 
   # An image asset can refer to one or more resolution-specific "variants", see

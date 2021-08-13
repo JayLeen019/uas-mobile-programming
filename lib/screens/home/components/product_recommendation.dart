@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:innisfree/screens/product_list/product_list_screen.dart';
 import '../../../constants.dart';
 
 class ProductRecom extends StatefulWidget {
@@ -94,7 +94,9 @@ class _ProductRecomState extends State<ProductRecom> {
                 ]),
             child: InkWell(
               borderRadius: BorderRadius.all(Radius.circular(10)),
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, ProductListScreen.routeName);
+              },
               child: Ink(
                 height: 102,
                 width: 324,
